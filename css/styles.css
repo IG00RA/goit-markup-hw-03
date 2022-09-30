@@ -1,0 +1,43 @@
+:root {
+  --most-text-color: #757575;
+  --tittle-text-color: #212121;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--most-text-color);
+}
+.header a {
+  text-decoration: none;
+}
+.header-nav {
+}
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+.web-logo {
+  color: #2196f3;
+}
+
+.header-item > .header-link + .header-email + .header-tel {
+  list-style: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--tittle-text-color);
+}
+.header-link {
+}
+.header-email {
+}
+.header-tel {
+}
