@@ -60,7 +60,7 @@ body {
 .header-link:focus {
   color: var(--secondary-link-color);
 }
-.current:active {
+.current {
   color: var(--secondary-link-color);
 }
 /* Main */
