@@ -50,7 +50,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0, auto;
+  margin: 0 auto;
 }
 /* Header */
 .section-margin {
@@ -61,7 +61,21 @@ img {
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
+.header-list {
+  display: flex;
+  gap: 50px;
+}
 .header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 .header-link,
 .header-contact {
@@ -142,9 +156,13 @@ img {
   width: 216px;
   height: 50px;
   text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 /* Features sections */
-.features {
+.section-gap {
+  display: flex;
+  gap: 30px;
 }
 .features-main-title {
   position: absolute;
@@ -188,10 +206,12 @@ img {
   list-style: none;
 }
 /* Team sections */
-.team {
-  background: var(--bcgnd-team-color);
+.section-padding {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.team {
+  background: var(--bcgnd-team-color);
 }
 
 .team-item {
@@ -208,12 +228,15 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 30px;
 }
 /* Footer */
 .footer {
@@ -230,9 +253,14 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-footer-color);
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-item {
   list-style: none;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-link,
 .footer-contact {
@@ -252,7 +280,10 @@ img {
 }
 /* Portfolio */
 .filter-list {
+  display: flex;
   margin-bottom: 50px;
+  gap: 8px;
+  justify-content: center;
 }
 
 .filter-item {
@@ -271,12 +302,16 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  padding: 6px 22px;
 }
 .filter-btn:focus,
 .filter-btn:hover {
   color: var(--main-hero-color);
 
   background: var(--secondary-link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
 }
@@ -293,8 +328,13 @@ img {
   margin: -1px;
 }
 .galery-list {
+  flex-wrap: wrap;
+}
+.card-padding {
+  padding: 20px 24px;
 }
 .galery-item {
+  width: 370px;
   list-style: none;
   border: 1px solid var(--filter-border-color);
 }

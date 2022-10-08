@@ -13,32 +13,39 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-
-    <header class="header section-margin">
-        <div class="container">
+    <header class="header">
+        <div class="container header-container">
             <nav class="header-nav">
                 <a class="header-logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
                 <ul class="header-list">
-                    <li class="header-item"><a class="header-link" href="./index.html">Студія</a></li>
-                    <li class="header-item"><a class="header-link current" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="header-item"><a class="header-link" href="">Контакти</a></li>
+                    <li class="header-item">
+                        <a class="header-link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link current" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link" href="">Контакти</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="header-list">
-                <li class="header-item"><a class="header-contact"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <ul class="header-list header-connect">
+                <li class="header-item">
+                    <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="header-item"><a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="header-item">
+                    <a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
-    <main class="main section-margin">
-        <section class="filter">
+    <main class="main">
+        <section class="filter section-padding">
             <div class="container">
                 <h1 class="galery-title">Галерея наших проектів</h1>
                 <ul class="filter-list">
@@ -58,51 +65,69 @@
                         <button class="filter-btn" type="button">Маркетинг</button>
                     </li>
                 </ul>
-                <ul class="galery-list">
+                <ul class="galery-list section-gap">
                     <li class="galery-item">
                         <img src="./images/tehno.jpg" alt="Сайт технокряк" width="370" height="294">
-                        <h3 class="galery-card">Технокряк</h3>
-                        <p class="galery-text">Веб-сайт</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Технокряк</h3>
+                            <p class="galery-text">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/poster.jpg" alt="Дизайн постер" width="370" height="294">
-                        <h3 class="galery-card">Постер New Orlean vs Golden Star</h3>
-                        <p class="galery-text">Дизайн</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Постер New Orlean vs Golden Star</h3>
+                            <p class="galery-text">Дизайн</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/restoran.jpg" alt="Додаток Ресторан" width="370" height="294">
-                        <h3 class="galery-card">Ресторан Seafood</h3>
-                        <p class="galery-text">Додаток</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Ресторан Seafood</h3>
+                            <p class="galery-text">Додаток</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/prime.jpg" alt="Маркетинг прайм" width="370" height="294">
-                        <h3 class="galery-card">Проєкт Prime</h3>
-                        <p class="galery-text">Маркетинг</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Проєкт Prime</h3>
+                            <p class="galery-text">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/boxes.jpg" alt="Додаток Бокс" width="370" height="294">
-                        <h3 class="galery-card">Проєкт Boxes</h3>
-                        <p class="galery-text">Додаток</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Проєкт Boxes</h3>
+                            <p class="galery-text">Додаток</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/inspiration.jpg" alt="Сайт без меж" width="370" height="294">
-                        <h3 class="galery-card">Inspiration has no Borders</h3>
-                        <p class="galery-text">Веб-сайт</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Inspiration has no Borders</h3>
+                            <p class="galery-text">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/limited.jpg" alt="Дизайн видання обмежена колекція" width="370" height="294">
-                        <h3 class="galery-card">Видання Limited Edition</h3>
-                        <p class="galery-text">Дизайн</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Видання Limited Edition</h3>
+                            <p class="galery-text">Дизайн</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/lab.jpg" alt="Маркетинг прроекту ЛАБ" width="370" height="294">
-                        <h3 class="galery-card">Проєкт LAB</h3>
-                        <p class="galery-text">Маркетинг</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Проєкт LAB</h3>
+                            <p class="galery-text">Маркетинг</p>
+                        </div>
                     </li>
                     <li class="galery-item">
                         <img src="./images/business.jpg" alt="Бізнес додаток" width="370" height="294">
-                        <h3 class="galery-card">Growing Business</h3>
-                        <p class="galery-text">Додаток</p>
+                        <div class="card-padding">
+                            <h3 class="galery-card">Growing Business</h3>
+                            <p class="galery-text">Додаток</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -113,13 +138,15 @@
             <a class="footer-logo" href="./index.html"><span class="web-logo">Web</span>Studio</a>
             <address class="footer-address">
                 <ul class="footer-list">
-                    <li class="footer-item"><a class="footer-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                            target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі
-                            Українки, 26</a></li>
-                    <li class="footer-item"><a class="footer-contact"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <li class="footer-item">
+                        <a class="footer-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                            rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
-                    <li class="footer-item"><a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    <li class="footer-item">
+                        <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
